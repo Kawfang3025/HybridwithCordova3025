@@ -1,0 +1,30 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.shopee.www"
+    },
+    "cordova-plugin-qrscanner": {
+      "PACKAGE_NAME": "com.shopee.www"
+    },
+    "cordova-plugin-buildinfo": {
+      "PACKAGE_NAME": "com.shopee.www"
+    },
+    "cordova-universal-links-plugin": {
+      "PACKAGE_NAME": "com.shopee.www"
+    },
+    "cordova-plugin-browsertab": {
+      "PACKAGE_NAME": "com.shopee.www"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.shopee.www"
+    }
+  },
+  "dependent_plugins": {}
+}
