@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "777247292085",
+    "firebase_url": "https://shopee-50b0c.firebaseio.com",
+    "project_id": "shopee-50b0c",
+    "storage_bucket": "shopee-50b0c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777247292085:android:714461228f9d403e",
+        "android_client_info": {
+          "package_name": "com.kf3025.shopee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777247292085-jnllrp8itn1lrggst6fgtoldhro0isg8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1vMZAYT7d8cLp--MNKufAN50MIQpBG8o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777247292085:android:94c771837d61518d",
+        "android_client_info": {
+          "package_name": "com.shopee.www"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777247292085-jnllrp8itn1lrggst6fgtoldhro0isg8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1vMZAYT7d8cLp--MNKufAN50MIQpBG8o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

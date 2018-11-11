@@ -2,7 +2,7 @@
 <widget id="com.shopee.www" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="AndroidLaunchMode" value="singleTask" />
     <universal-links>
-        <host name="shopee3025.page.link" scheme="https" />
+        <host name="shopeekf3025.page.link" scheme="https" />
         <host name="shopee-50b0c.firebaseapp.com" scheme="https">
             <path url="/__/auth/callback" />
         </host>
