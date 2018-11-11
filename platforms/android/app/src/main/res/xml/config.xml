@@ -20,6 +20,12 @@
     <feature name="InAppBrowser">
         <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
     </feature>
+    <universal-links>
+        <host name="shopeekf3025.page.link" scheme="https" />
+        <host name="shopee-50b0c.firebaseapp.com" scheme="https">
+            <path url="/__/auth/callback" />
+        </host>
+    </universal-links>
     <name>shopee</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -35,12 +41,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <universal-links>
-        <host name="shopee3025.page.link" scheme="https" />
-        <host name="shopee-50b0c.firebaseapp.com" scheme="https">
-            <path url="/__/auth/callback" />
-        </host>
-    </universal-links>
     <allow-intent href="market:*" />
     <preference name="loglevel" value="DEBUG" />
+    <preference name="AndroidLaunchMode" value="singleTask" />
 </widget>

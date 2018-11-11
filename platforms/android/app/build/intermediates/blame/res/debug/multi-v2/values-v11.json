@@ -4,7 +4,7 @@
             "outputFile": "D:\\Study\\MobileApp\\shopee\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Chaweewan Sukwan\\.gradle\\caches\\transforms-1\\files-1.1\\zxing-android-embedded-3.3.0.aar\\2bbf2c6a07b97025dc7026620e0a31b1\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\Chaweewan Sukwan\\.gradle\\caches\\transforms-1\\files-1.1\\zxing-android-embedded-3.3.0.aar\\06d2e2fcb02da62674b0081eeaf8dfe0\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Chaweewan Sukwan\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.1.0.aar\\cc7356cfc7d088bcddddf29c57fe477f\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\Chaweewan Sukwan\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.1.0.aar\\2396d80d82dfa06de1cad1def2aafd73\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "4,10,16,22,28,34,42,43,44,49,56,58,62,63,64,115,169",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Nov 11 01:28:56 ICT 2018
+#Mon Nov 12 03:04:24 ICT 2018
 17.baseType=DIRECTORY
 4.path=www/images/item3.jpg
 25.base=D\:\\Study\\MobileApp\\shopee\\platforms\\android\\app\\build\\intermediates\\assets\\debug

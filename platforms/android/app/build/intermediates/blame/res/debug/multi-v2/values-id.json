@@ -4,7 +4,7 @@
             "outputFile": "D:\\Study\\MobileApp\\shopee\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-id\\values-id.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Chaweewan Sukwan\\.gradle\\caches\\transforms-1\\files-1.1\\zxing-android-embedded-3.3.0.aar\\2bbf2c6a07b97025dc7026620e0a31b1\\res\\values-id\\values-id.xml",
+                    "source": "C:\\Users\\Chaweewan Sukwan\\.gradle\\caches\\transforms-1\\files-1.1\\zxing-android-embedded-3.3.0.aar\\06d2e2fcb02da62674b0081eeaf8dfe0\\res\\values-id\\values-id.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

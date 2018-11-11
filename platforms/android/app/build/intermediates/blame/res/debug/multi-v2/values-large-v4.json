@@ -4,7 +4,7 @@
             "outputFile": "D:\\Study\\MobileApp\\shopee\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Chaweewan Sukwan\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.1.0.aar\\cc7356cfc7d088bcddddf29c57fe477f\\res\\values-large\\values-large.xml",
+                    "source": "C:\\Users\\Chaweewan Sukwan\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.1.0.aar\\2396d80d82dfa06de1cad1def2aafd73\\res\\values-large\\values-large.xml",
                     "from": {
                         "startLines": "4,7,8,11,12,13,14,15,16,17,18,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
