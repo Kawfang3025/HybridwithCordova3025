@@ -127,7 +127,7 @@
                 <ons-row style="height:180px" vertical-align="center">
                         <% product.forEach(function(product){
                             var item = product.data();%>
-                            <ons-col onclick="showdetail('<%= item.title %>');" class="bg-light text-dark" width="50%">
+                            <ons-col onclick="showdetail('<%= item.pid %>');" class="bg-light text-dark" width="50%">
                                 <div style="" >
                                 <div ><img class="center" style="text-align:center;margin:2%;max-height:150px;max-width: 99%;" src="<%= item.img %>">  </div>
                                 <div><p style="white-space: nowrap; width: 90%;overflow: hidden;text-overflow: ellipsis; text-align: center; margin: 10px;" id="title">
@@ -243,9 +243,9 @@
 
         }
     });
-    function showdetail(title) {
-        console.log(title);
-        var detailRef = db.collection("PRODUCT").where("title", "==", title);
+    function showdetail(pid) {
+        console.log(pid);
+        var detailRef = db.collection("PRODUCT").where("pid", "==", parseInt(pid));
         detailRef.get().then(function (querySnapshot) {
             var detail_template = $('#detail_template').html();
             var html = ejs.render(detail_template, { datadetail: querySnapshot.docs });
@@ -256,7 +256,10 @@
     }
 
     function getHomeData() {
-        var docRef = db.collection("UI").doc("home");
+        var code=localStorage.getItem('code');
+        
+        if(code == null){
+            var docRef = db.collection("UI").doc("home");
         docRef.get().then(function (doc) {
             if (doc.exists) {
                 //Display data
@@ -273,7 +276,10 @@
             }
         }).catch(function (error) {
             console.log("Error getting document:", error);
-        });
+        });}else{
+        showdetail(code);
+        myNavigator.pushPage('showdetail.html');
+        }
 
     }
     function getAllProduct(item, itemP) {
@@ -369,7 +375,7 @@
     function addNewData() {
         var data = {
             pid: '6',
-            titlt: "iPhoneXS",
+            title: "iPhoneXS",
             price: 50000,
             category: "smartphone"
         }
