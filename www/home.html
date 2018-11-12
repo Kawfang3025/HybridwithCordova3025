@@ -253,6 +253,7 @@
             var html = ejs.render(detail_template, { datadetail: querySnapshot.docs });
             $('#detail').html(html);
         })
+        localStorage.setItem("code", '');
         myNavigator.pushPage('showdetail.html');
 
     }
@@ -262,7 +263,7 @@
         
         if(code == null){
             var docRef = db.collection("UI").doc("home");
-        docRef.get().then(function (doc) {
+            docRef.get().then(function (doc) {
             if (doc.exists) {
                 //Display data
                 console.log("Document data:", doc.data());
@@ -281,7 +282,6 @@
         });}else{
         showdetail(code);
         myNavigator.pushPage('showdetail.html');
-        localStorage.setItem("code", '');
         }
 
     }
