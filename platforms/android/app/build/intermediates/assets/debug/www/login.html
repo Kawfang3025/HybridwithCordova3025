@@ -4,6 +4,8 @@
 <head>
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
@@ -31,6 +33,11 @@
 <body>
 
     <ons-page>
+        <ons-toolbar class="bg-dark">
+            </div>
+            <div class="center text-light" id="appname">Login</div>
+            </div>
+        </ons-toolbar>
         <ons-tabbar swipeable position="auto" id="tabbar">
             <ons-tab class="bg-light" page="login.html" label="Sign In" icon="ion-home, material:md-home" badge="7"
                 active>
@@ -167,7 +174,7 @@
                 // Send user to home.html
                 window.location.href = 'home.html';
             }
-        }); 
+        });
     //     document.addEventListener('prechange', function (event) {
     //     document.querySelector('ons-toolbar.center').innerHTML = event.tabItem.getAttribute('label');
     // });
