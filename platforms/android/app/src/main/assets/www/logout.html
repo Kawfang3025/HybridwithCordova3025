@@ -18,19 +18,12 @@
         firebase.initializeApp(config);
 
     </script>
-    <style>
-        .toolbaricon {
-            padding-left: 5px;
-            padding-bottom: 5px;
-            padding-right: 5px;
-            color: orange;
-        }
-    </style>
+   
 </head>
 
-<body>
-    <ons-page>
-        <div style="text-align: center; margin-top: 30px;">
+<body style=" background-color: rgb(22, 188, 190);>
+    <ons-page ">
+        <div style="text-align: center; width: auto; height: auto;">
             <p style="margin-top: 30px;">
                 <ons-button onclick="logout()">Sign Out</ons-button>
             </p>
@@ -39,7 +32,7 @@
     <script>
         function logout() {
             firebase.auth().signOut().then(function () {
-                ons.notification.alert('See u again soon').then(function(){
+                ons.notification.alert('See you again soon').then(function(){
                     window.location.href = 'login.html';
                 });                
             }).catch(function (error) {
