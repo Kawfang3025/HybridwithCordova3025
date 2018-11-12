@@ -20,14 +20,6 @@
         };
         firebase.initializeApp(config);
     </script>
-    <style>
-        .toolbaricon {
-            padding-left: 5px;
-            padding-bottom: 5px;
-            padding-right: 5px;
-            color: orange;
-        }
-    </style>
 </head>
 
 <body>
@@ -35,17 +27,16 @@
     <ons-page>
         <ons-toolbar class="bg-dark">
             </div>
-            <div class="center text-light" id="appname">Login</div>
+            <div class="center text-light" id="appname">Sign In/Sign up</div>
             </div>
         </ons-toolbar>
         <ons-tabbar swipeable position="auto" id="tabbar">
-            <ons-tab class="bg-light" page="login.html" label="Sign In" icon="ion-home, material:md-home" badge="7"
+            <ons-tab class="bg-light" page="login.html" label="Sign In" icon="md-assignment-account"
                 active>
             </ons-tab>
-            <ons-tab class="bg-light" page="register.html" label="Sign Up" icon="fa-shopping-bag" active-icon="fa-shopping-bag">
+            <ons-tab class="bg-light" page="register.html" label="Sign Up" icon="md-edit" active-icon="md-edit">
             </ons-tab>
         </ons-tabbar>
-
     </ons-page>
     <template id="login.html">
         <ons-page id="logintab">
@@ -57,14 +48,20 @@
                     <ons-input id="password" modifier="underbar" type="password" placeholder="Password" float></ons-input>
                 </p>
                 <p style="margin-top: 30px;">
-                    <ons-button onclick="login()">Sign in</ons-button>
+                    <ons-button class="btn-md" style="width:70%" onclick="login()">Sign In</ons-button>
                 </p>
-                <p style="margin-top: 30px;">
-                    <ons-button onclick="google()">Sign in with Google</ons-button>
+            </div>
+            <br>
+            <br>
+            <br>
+            <hr>
+            
+            <div style="text-align:center;" ><a>Or Sign in with</a>
+                <p style="margin-top: 30px;text-align: center;">
+                    <ons-button icon="md-google-plus" style="background-color: rgb(224, 6, 6);width:40%;" class="text-light" onclick="google()" >&nbsp;&nbsp; &nbsp;Google</ons-button> &nbsp;
+                    <ons-button icon="md-facebook" style="background-color: rgb(0, 0, 165);width:40%;" class="text-light" onclick="facebook()"> &nbsp;&nbsp;&nbsp;Facebook</ons-button>
                 </p>
-                <p style="margin-top: 30px;">
-                    <ons-button onclick="facebook()">Sign in with Facebook</ons-button>
-                </p>
+            </div>
 
         </ons-page>
     </template>

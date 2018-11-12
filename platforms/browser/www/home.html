@@ -176,7 +176,7 @@
                                       </p></h6></div>
                                 </div>    
                             </ons-card>
-                            <ons-button class="bg-dark text-center" style="position: absolute;bottom:0;right:0;width:100%;"  onclick="ons.notification.toast('Add to cart Already!', { timeout: 1000, animation: 'fall' },addtocart('<%= item.title %>'))">Add to Cart</ons-button>
+                            <ons-button class="bg-dark text-center" style="position: absolute;bottom:10px;right:0;width:100%;height:50px;"  onclick="ons.notification.toast('Add to cart Already!', { timeout: 1000, animation: 'fall' },addtocart('<%= item.title %>'))">Add to Cart</ons-button>
 
                 <%});%>      
             </script>
@@ -253,6 +253,7 @@
             var html = ejs.render(detail_template, { datadetail: querySnapshot.docs });
             $('#detail').html(html);
         })
+        localStorage.setItem("code", null);
         myNavigator.pushPage('showdetail.html');
 
     }
@@ -262,7 +263,7 @@
         
         if(code == null){
             var docRef = db.collection("UI").doc("home");
-        docRef.get().then(function (doc) {
+            docRef.get().then(function (doc) {
             if (doc.exists) {
                 //Display data
                 console.log("Document data:", doc.data());

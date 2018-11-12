@@ -253,7 +253,7 @@
             var html = ejs.render(detail_template, { datadetail: querySnapshot.docs });
             $('#detail').html(html);
         })
-        localStorage.setItem("code", '');
+        localStorage.setItem("code", null);
         myNavigator.pushPage('showdetail.html');
 
     }
