@@ -4,6 +4,8 @@
 <head>
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
@@ -31,6 +33,11 @@
 <body>
 
     <ons-page>
+        <ons-toolbar class="bg-dark">
+            </div>
+            <div class="center text-light" id="appname">Login</div>
+            </div>
+        </ons-toolbar>
         <ons-tabbar swipeable position="auto" id="tabbar">
             <ons-tab class="bg-light" page="login.html" label="Sign In" icon="ion-home, material:md-home" badge="7"
                 active>
@@ -56,7 +63,7 @@
                     <ons-button onclick="google()">Sign in with Google</ons-button>
                 </p>
                 <p style="margin-top: 30px;">
-                    <ons-button onclick="facebook()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASJSURBVGhD7VldUxpXGPYH9OMX9eO+t+1f6EVEgSARv0E+BBYQKx1jU8FoiJqMNtb4lZgapRoEsYZMmtpoM21z0Yt2mM70onbaeXuew+6GxbMNKGW54J15Zs4ze877Ps+e/Ti7p6UZzWjGxcL/8fjb0qXJd8OmxEdGALVH2qbfkuVUH9yAfXY13Jr4hyUkQ8E0SB1zywH752/K8ioLmAjaZgpIEhi4S57RPfKM7RuD0TTTsMQNBW03C9Amy3x98JlgA73RHXLePGkIQAs/sfbZu7LM/w44xlRiJkQJjQQ0hdoSf1d0z0itiffhHFOKwa7EtzTkf8Dax5wPxp+QL7ipJnd/dki+yPYrPpYj78iuyj2jGfLEMirHMffVA5VjLHKonOVGjSI/5rWhARyaoC3cNvGeLFc/JFPiA3TuHU5T343n5I2k+GDXtTz1J4/JywqBD0wdce7zrFHIMs3bgL9vkSTbjMoDXQscCscx9FE4xiIH2siJ3L6hDc5RExwaoKUnWjQCjbJc/VCM2P0pah85oG73fT7YFtrlvNe5jukly3CWc2fvEknmKd4G3I55CliTKvfab3MoHMfQR+EYixxoIydy9w2scI6aqA0N4NB0biOW4QxLtMHbgDW8R12er1R+OZSmTt+myjuCO3RlaEvl9kCKQ+E4hj4Kx1jkUHiX5wGvoXDUhga0L2SkkdA0IkpWK9ikR+yyesgvJYd3k66wejZpl11WuIxyZ/oDDWPEHM2xh8UaBSxJLkgPru5F4fiGMGINp2mIPXqRe9x1m7bubNFxNkcvn+bpxTcH9H06S0+20hTrTJLPfkuYw3Aj5miW/NYZCrVfp+2VR/RX4QddjPfPNa4RvCfC7P3wOJUVii9FwxrBzRtpn6SlaytC4eVoWCN4oSHfj/nDM6ILP39H+e0MHdzbUdGw94ir50v6xDpFf/52ojGRXU3xmUKtcpQuYUphqBFP5zxNOOc0Jn5/eUTD5uvs22KOL1mwpsIyRYE5ui/MZagRXCZJ/7zGyLOdDBeEF6JojB4MNzIjLWiM4F44T406GclR9+B9tgRf0wBv8XIjufWvuSAnu3/K+/e41skSKX4ilKMuRjoCRXEi6BnRQw87IaIadTGiFDnc2KVfT55qUPjpmcbIH788P9MH2FstXnJ6905djRzt7WtEV4PU4kOeo/RDS1Sj4Y0sx9dIYusxQ5fxtTCSDC6wFfKsMD9QFyP4MMI4Eaq52Qe77gjzA3Uxgo+m/r5ltiRZ1CBomdY14nZ8oemLx3Hpj4ly1MWIHkQvRMVIR7D4i6lSNI2IklWLphEBmkZEyaqFcUbkbQWH99X/3YuglkagCeMq2lbgGz2mxKnbsSBMVi1qaQSaoK3ivcRQa+IqCpX+hT8vamVE+YkRNsVjsszXB2YlZJrMYyDOAqa0k31bnwf+y7M0OXiLTvZzKjZu3OOisO8hGlMK1JZngkKmxOPYpdgbsszKAtMXMsXHWILT4pkwFKfsKvm0ahOlgY3HiCn+jtQ28SFLKNzU/7+Amqhd9f56M5rRjLJoafkXaZzYXjg3ZSsAAAAASUVORK5CYII=">Sign in with Facebook</ons-button>
+                    <ons-button onclick="facebook()">Sign in with Facebook</ons-button>
                 </p>
 
         </ons-page>
@@ -66,18 +73,18 @@
             <div style="text-align: center; margin-top: 30px;">
                 <h3>Register new user</h3>
                 <p>
-                    <ons-input id="username" modifier="underbar" placeholder="Username" float></ons-input>
+                    <ons-input id="username1" modifier="underbar" placeholder="Username" float></ons-input>
                 </p>
                 <p>
-                    <ons-input id="password" modifier="underbar" type="password" placeholder="Password" float></ons-input>
+                    <ons-input id="password1" modifier="underbar" type="password" placeholder="Password" float></ons-input>
                 </p>
                 <p style="margin-top: 30px;">
                     <ons-button onclick="register()">Sign Up for New User</ons-button>
                     <script>
                         function register() {
-                            var username = document.getElementById('username').value;
-                            var password = document.getElementById('password').value;
-                            firebase.auth().createUserWithEmailAndPassword(username, password).catch(function (error) {
+                            var username1 = document.getElementById('username1').value;
+                            var password1 = document.getElementById('password1').value;
+                            firebase.auth().createUserWithEmailAndPassword(username1, password1).catch(function (error) {
                                 // Handle Errors here.
                                 var errorCode = error.code;
                                 var errorMessage = error.message;
@@ -168,15 +175,11 @@
                 window.location.href = 'home.html';
             }
         });
+    //     document.addEventListener('prechange', function (event) {
+    //     document.querySelector('ons-toolbar.center').innerHTML = event.tabItem.getAttribute('label');
+    // });
     </script>
 </body>
-<script>
-    document.addEventListener('prechange', function (event) {
-        document.querySelector('ons-toolbar .center')
-    .innerHTML = event.tabItem.getAttribute('label');
-    });
 
-
-</script>
 
 </html>

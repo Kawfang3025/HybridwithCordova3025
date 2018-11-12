@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Kanit|Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
     <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
@@ -33,7 +33,8 @@
         });
     </script>
     <style>
-        *{font-family: 'Roboto', sans-serif;}
+        .body{font-family: 'K2D', sans-serif;
+        }
         .colortb{
         background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% );
        }
@@ -84,7 +85,8 @@
                 <ons-search-input placeholder="Search" onchange="search(this.value)"></ons-search-input>
             </p>
             <p style="text-align: center; margin-top: 10px;">
-                <ons-icon class="text-dark" size="30px" icon="md-camera-add" onclick="scanQR()">Scan QRCode</ons-icon>
+                <ons-button style="background-color:pink;"  onclick="scanQR()"><img src="https://img.icons8.com/dusk/40/000000/qr-code.png">Scan QRCode</ons-button>
+                <!-- <ons-icon class="text-dark" size="30px" icon="md-camera-add" onclick="scanQR()">Scan QRCode</ons-icon> -->
             </p>
             <ons-carousel swipeable auto-scroll overscrollable id="carousel" style="height: 300px;">
                 <ons-carousel-item id="carousel1" style="background: url('images/1.jpg') no-repeat center; background-size: contain;">
@@ -98,12 +100,12 @@
             <script id="icon_template" type="text/template">
         <ons-row style="height:120px" vertical-align="center">  
         <% categories.forEach(function(category){%> 
-        <ons-col style="background-image: radial-gradient( circle farthest-corner at 1.1% 1.4%,  rgba(246,256,3,1) 0%, rgba(256,133,1,1) 89.5% );"  width="33.33%">
-          <ons-button modifier="quiet" onclick="changeTab('<%= category.name %>')">
+        <ons-col style="background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(255,200,124,1) 0%, rgba(252,251,121,1) 90% );"  width="33.33%">
+          <ons-button style="width:100%;text-align: center;" modifier="quiet" onclick="changeTab('<%= category.name %>')">
             <p style="text-align: center; margin-top: 30px;" >
-            <ons-icon class="text-light" size="60px" icon="<%= category.icon %>"></ons-icon>
+            <ons-icon class="text-light" size="60px" ><img src="<%= category.icon %>" ></ons-icon>
           </p>
-          <p style="text-align: center; margin: 10px;" id="icon1_text">
+          <p style="text-align: center; margin: 10px;color:black;font-size: 20px;font-family: 'K2D', sans-serif;" id="icon1_text">
             <%= category.name %>
           </p></ons-button>
         </ons-col>

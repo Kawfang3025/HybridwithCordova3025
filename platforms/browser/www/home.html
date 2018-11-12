@@ -85,7 +85,7 @@
                 <ons-search-input placeholder="Search" onchange="search(this.value)"></ons-search-input>
             </p>
             <p style="text-align: center; margin-top: 10px;">
-                <ons-button  onclick="scanQR()"><img src="https://img.icons8.com/dusk/40/000000/qr-code.png">Scan QRCode</ons-button>
+                <ons-button style="background-color:pink;"  onclick="scanQR()"><img src="https://img.icons8.com/dusk/40/000000/qr-code.png">Scan QRCode</ons-button>
                 <!-- <ons-icon class="text-dark" size="30px" icon="md-camera-add" onclick="scanQR()">Scan QRCode</ons-icon> -->
             </p>
             <ons-carousel swipeable auto-scroll overscrollable id="carousel" style="height: 300px;">
@@ -105,7 +105,7 @@
             <p style="text-align: center; margin-top: 30px;" >
             <ons-icon class="text-light" size="60px" ><img src="<%= category.icon %>" ></ons-icon>
           </p>
-          <p style="text-align: center; margin: 10px;color:black;font-size: 20px;" id="icon1_text">
+          <p style="text-align: center; margin: 10px;color:black;font-size: 20px;font-family: 'K2D', sans-serif;" id="icon1_text">
             <%= category.name %>
           </p></ons-button>
         </ons-col>
